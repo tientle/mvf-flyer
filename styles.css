@@ -51,6 +51,7 @@ body > * {
     display: grid;
     grid-template-areas: 
         "topnav topnav topnav"
+        "title title title"
         "photo intro ..."
          "talent talent talent"
         "about about about"
@@ -59,6 +60,9 @@ body > * {
         /* grid-template-rows: 1fr 4fr 1fr; */
   }
 
+  .title {
+    grid-area: title;
+  }
 
   .photo {
     grid-area: photo;
