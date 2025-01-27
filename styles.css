@@ -1,0 +1,128 @@
+h1 {
+    font-family: "Cedarville Cursive", serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+
+p, ul, li {
+    font-size: 12px;
+    max-width: 400px;
+    text-align: justify;
+    line-height: 17px;
+  }
+
+.container {
+    display: grid;
+    /* background-color: #ffbddc; */
+    /* padding: 20px; */
+  }
+/* 
+  .flex-container > p {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 11px;
+  } */
+
+
+
+  img {
+    border-radius: 50%;
+    height: 250px;
+    margin: auto;
+    padding: 5px;
+  }
+
+body > * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #030200;
+    background-color: #ffffff;
+  }
+  
+  .grid {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "topnav topnav topnav"
+        "photo intro ..."
+         "talent talent talent"
+        "about about about"
+    
+        "footer footer footer";
+        /* grid-template-rows: 1fr 4fr 1fr; */
+  }
+
+
+  .photo {
+    grid-area: photo;
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .about {
+    grid-area: about;
+  }
+
+  .talent {
+    grid-area: talent;
+  }
+  
+  .about > p {
+    max-width: 600px;
+  }
+  
+  .talent > p {
+    max-width: 600px;
+  }
+
+.footer {
+    grid-area: footer;
+}
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #800417;
+    grid-area: topnav;
+    font-size: 12px;
+    max-width: 800px;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #800417;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Style the content */
+  div {
+    background-color: #ffffff;
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Style the footer */
+  .footer {
+    padding: 10px;
+  }
